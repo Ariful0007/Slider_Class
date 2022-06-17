@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/gradient_color"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ll"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="2dp"
+        android:id="@+id/logo"
+       android:layout_centerInParent="true"
+
+        ></de.hdodenhof.circleimageview.CircleImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:id="@+id/appname"
+        android:layout_margin="10dp"
+        android:layout_below="@id/logo"
+        android:textAlignment="center"
+        >
+
+    </TextView>
+    <com.agrawalsuneet.dotsloader.loaders.TashieLoader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tashieloader_animDelay="200"
+        android:layout_below="@id/appname"
+        app:tashieloader_animDur="1000"
+        android:layout_centerInParent="true"
+        app:tashieloader_dotsColor="@color/white"
+        app:tashieloader_dotsDist="5dp"
+        app:tashieloader_dotsRadius="20dp"
+        app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+        app:tashieloader_noOfDots="6" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:lottie_fileName="splash.json"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>
+
+
+</LinearLayout>
