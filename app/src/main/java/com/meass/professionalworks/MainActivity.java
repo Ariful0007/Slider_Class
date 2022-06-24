@@ -11,6 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 FirebaseAuth firebaseAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,12 +24,12 @@ FirebaseAuth firebaseAuth;
             @Override
             public void run() {
                 if (firebaseAuth.getCurrentUser()!=null) {
-                    startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+                    startActivity(new Intent(getApplicationContext(),RegisterActivity.class));
                 }
                 else {
-                    startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+                    startActivity(new Intent(getApplicationContext(),RegisterActivity.class));
                 }
             }
-        },50000);
+        },1000);
     }
 }

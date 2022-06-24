@@ -8,5 +8,6 @@
     <color name="color1">#41729F</color>
     <color name="colo2">#5885AF</color>
     <color name="color3">#274472</color>
-    <color name="colo4">#C3E0E5</color>
+    <color name="colo4">#285D67</color>
+    <color name="lightGray">#F2F2F2</color>
 </resources>
