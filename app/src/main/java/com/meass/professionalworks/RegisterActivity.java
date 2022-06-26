@@ -127,6 +127,7 @@ FirebaseStorage firebaseStorage;
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if (task.isSuccessful()) {
+                                                           // firebaseFirestore.collection("")
                                                             progressDialog.dismiss();
                                                             Toast.makeText(RegisterActivity.this, "Done", Toast.LENGTH_SHORT).show();
                                                         }
@@ -227,5 +228,9 @@ progressDialog.dismiss();
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
+    }
+
+    public void login(View view) {
+        startActivity(new Intent(getApplicationContext(),LoginActivity.class));
     }
 }
