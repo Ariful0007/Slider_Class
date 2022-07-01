@@ -222,6 +222,10 @@ progressDialog.dismiss();
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         value_gender=adapterView.getItemAtPosition(i).toString();
+        if(adapterView.getId()==R.id.spinnar) {
+        }
+        if (adapterView.getId()==R.id.spinnar1) {
+        }
 
     }
 

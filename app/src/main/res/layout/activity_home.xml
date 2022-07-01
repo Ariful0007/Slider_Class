@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/drawar"
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
@@ -11,7 +12,26 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     >
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolbar"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:titleTextColor="#004D40"
+        android:background="@color/white"
 
+        app:titleMarginStart="20dp"
+        app:navigationIcon="@drawable/ic_baseline_menu_24"
+        android:minHeight="?attr/actionBarSize"
+        ></androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>
 </RelativeLayout>
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
