@@ -27,7 +27,7 @@ FirebaseAuth firebaseAuth;
                     startActivity(new Intent(getApplicationContext(),HomeActivity.class));
                 }
                 else {
-                    startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+                    startActivity(new Intent(getApplicationContext(),HomeActivity.class));
                 }
             }
         },1000);
