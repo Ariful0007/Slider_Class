@@ -69,7 +69,7 @@ FirebaseStorage firebaseStorage;
         submit=findViewById(R.id.submit);
         profileImage=findViewById(R.id.profileImage);
         firebaseStorage= FirebaseStorage.getInstance();
-        storageReference=FirebaseStorage.getInstance().getReference();
+            storageReference=FirebaseStorage.getInstance().getReference();
         profileImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
