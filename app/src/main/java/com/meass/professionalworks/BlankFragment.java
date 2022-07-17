@@ -9,24 +9,20 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class ProfileFragement extends Fragment {
+public class BlankFragment extends Fragment {
 
-View view;
-String key;
 
-    public ProfileFragement() {
+
+    public BlankFragment() {
         // Required empty public constructor
     }
-
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view= inflater.inflate(R.layout.fragment_profile_fragement, container, false);
-        Bundle bundle=new Bundle();
-        key=bundle.getString("key");
+        View view= inflater.inflate(R.layout.fragment_blank, container, false);
         return view;
     }
 }

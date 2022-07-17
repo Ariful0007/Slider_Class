@@ -1,9 +1,11 @@
 package com.meass.professionalworks;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,7 +32,13 @@ CardView cardView1;
         cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(view.getContext(), "Done", Toast.LENGTH_SHORT).show();
+                Bundle bundle=new Bundle();
+                ProfileFragement profileFragement=new ProfileFragement();
+                bundle.putString("key","Android class");
+                profileFragement.setArguments(bundle);
+                FragmentTransaction pt=getActivity().getSupportFragmentManager().beginTransaction();
+                pt.replace(R.id.content,profileFragement,"");
+                pt.commit();
             }
         });
         return view;
